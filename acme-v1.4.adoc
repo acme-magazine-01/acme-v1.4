@@ -1,0 +1,43 @@
+= ACME Magazine - June 2014: Off the chain
+The Octocat
+v1.4, 2014-06-01
+:doctype: book
+:publisher: ACME
+:app-name: ACME Magazine
+//:subject: Subject 1, Subject 2, ...
+:description: June 2014 Edition of ACME Magazine: +
+A diverse blend of articles covering the latest tools, method and best practices in software development.
+:pub-handle: acme
+:pub-date: 2014-06
+:pub-url: http://acme.com/magazine
+:edition: {revnumber}
+:edition-handle: acme-v1.4
+:volume: 1
+:issue: 4
+:listing-caption: Listing
+:codedir: code
+:imagesdir: images
+ifdef::backend-pdf,asciidoctor-pdf[]
+:leveloffset: 1
+:toc:
+:toclevels: 1
+:toc-title: Contents
+:source-highlighter: pygments
+:pygments-style: bw
+endif::[]
+ifdef::env-github[:buildfor-editor:]
+//:front-cover-image: image:jacket/front-cover.jpg[Cover,1050,1600]
+//:back-cover-image: image:jacket/back-cover.jpg[Cover,1050,1600]
+
+ifdef::buildfor-editor[]
+:username: publisher
+include::publishers-letter.adoc[]
+endif::[]
+
+ifdef::buildfor-editor,buildfor-octocat[]
+:username: octocat
+:idprefix: to_
+:articledir: {edition-handle}-{username}
+:imagesdir: acme-v1.4-octocat/images
+include::{articledir}/article.adoc[]
+endif::[]

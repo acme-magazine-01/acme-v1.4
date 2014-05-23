@@ -1,0 +1,10 @@
+edition_number: '1.4'
+edition_handle: acme-v1.4
+edition_pub_date: 2014-06
+build_dir: build
+articles:
+- username: octocat
+  local_dir: acme-v1.4-octocat
+  repository:
+    clone_url: https://github.com/acme-magazine-01/acme-v1.4-octocat.git
+    ssh_url: git@github.com:acme-magazine-01/acme-v1.4-octocat.git

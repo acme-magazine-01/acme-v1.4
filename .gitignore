@@ -1,0 +1,6 @@
+/build/
+/acme-v1.4-*/
+/images/avatars/
+/images/headshots/
+/*.html
+/*.pdf*
